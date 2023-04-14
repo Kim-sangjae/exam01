@@ -7,7 +7,7 @@
                 <dt>제목</dt>
                 <dd>
                     <input type="text" name="subject" th:field="*{subject}">
-                    <div th:each="err : ${#fields.errors('subject')}" th:text="${err}}"></div>
+                    <div th:each="err : ${#fields.errors('subject')}" th:text="${err}"></div>
                 </dd>
             </dl>
             <dl>
