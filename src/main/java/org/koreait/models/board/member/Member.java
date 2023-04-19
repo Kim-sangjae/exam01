@@ -1,6 +1,6 @@
 package org.koreait.models.board.member;
 
-public class Member {
+public class Member { // 빌더패턴 구조
 
     private Long userNo;
     private String userId;
@@ -28,7 +28,7 @@ public class Member {
 
 
 
-    protected static class Builder{ // 내부클래스여서 Member 사용 가능
+    protected static class Builder{ // 내부클래스여서 Member 사용 가능 // 메서드를 통해 값을 정할수있게 만든다
         private Member member = new Member();
 
         public Builder userNo(Long userNo){
